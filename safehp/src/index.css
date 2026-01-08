@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Force Dark Mode Background immediately */
+body {
+  background-color: #101922; /* background-dark */
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar to match the dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #101922;
+}
+::-webkit-scrollbar-thumb {
+  background: #283039;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4754;
+}
